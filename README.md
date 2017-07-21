@@ -5,6 +5,16 @@ This is a template express application designed to run on Red Hat Mobile
 Application Platform. It integrates New Relic's Node.js module to provide
 detailed analytics integration with their platform.
 
+By default it uses the title of your Node.js application deployed on Red Hat
+Mobile Application Platform as the New Relic title. You can see this is done in
+`newrelic.js` by reading the `FH_TITLE` variable that Red Hat Mobile injects
+during a deploy of your application.
+
+During local development it will simply default to `Local Development Cloud`,
+or you could alter the  `application.js` to bypass `require('newrelic')` when
+the  `FH_USE_LOCAL_DB` flag is set to true since this flag is used to indicate
+a local development environment.
+
 ## Prerequisites
 
 * Node.js v4.4.3
