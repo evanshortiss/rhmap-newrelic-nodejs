@@ -28,7 +28,7 @@ a local development environment.
 To run this application you'll need to set the environment variables:
 
 * NR_LICENCE_KEY - Your New Relic licence key
-* NR_LICENCE_LOG_LEVEL - The New Relic log level to use
+* NR_LOG_LEVEL - The New Relic log level to use
 * FH_USE_LOCAL_DB - Instructs the application to connect to a local MongoDB
 
 The easiest way to do this for development is to create a `.env` file inside
@@ -36,7 +36,7 @@ this repository and add the following content:
 
 ```
 NR_LICENCE_KEY=your_new_relic_key_goes_here
-NR_LICENCE_LOG_LEVEL=info
+NR_LOG_LEVEL=info
 FH_USE_LOCAL_DB=true
 ```
 

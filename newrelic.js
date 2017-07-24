@@ -21,6 +21,6 @@ exports.config = {
      * it allows us to set different levels for different environments, or alter
      * the level without need to go thru a full code commit cycle
      */
-    level: env('NR_LICENCE_LOG_LEVEL', 'info').asString()
+    level: env('NR_LOG_LEVEL', 'info').asString()
   }
 }
